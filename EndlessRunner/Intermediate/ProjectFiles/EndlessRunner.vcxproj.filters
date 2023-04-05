@@ -11,6 +11,7 @@
     <None Include="..\..\Source\EndlessRunnerEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -28,6 +29,18 @@
     </None>
     <None Include="..\..\Config\DefaultInput.ini">
       <Filter>Config</Filter>
+    </None>
+    <Filter Include="Platforms">
+      <UniqueIdentifier>{ED49A36C-4FD5-37E5-A2AC-E11BEF4F21CF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platforms\HoloLens">
+      <UniqueIdentifier>{28125F47-4973-377C-9D77-EBC3C72EC856}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platforms\HoloLens\Config">
+      <UniqueIdentifier>{D3BF39CB-FA64-39E2-A327-B5021BA69773}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Platforms\HoloLens\Config\HoloLensEngine.ini">
+      <Filter>Platforms\HoloLens\Config</Filter>
     </None>
     <Filter Include="Source\EndlessRunner">
       <UniqueIdentifier>{A6D23F56-464E-3EC2-91B8-49F1AD215469}</UniqueIdentifier>
@@ -52,6 +65,18 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\EndlessRunner\EndlessRunnerGameMode.h">
       <Filter>Source\EndlessRunner</Filter>
+    </ClInclude>
+    <Filter Include="Source\EndlessRunner\Private">
+      <UniqueIdentifier>{8E0FAD77-713C-381B-8248-FC00FA450FB4}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\EndlessRunner\Private\TestActor.cpp">
+      <Filter>Source\EndlessRunner\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\EndlessRunner\Public">
+      <UniqueIdentifier>{6199CFC7-7BC7-3239-90FA-3D8CE90DCC04}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\EndlessRunner\Public\TestActor.h">
+      <Filter>Source\EndlessRunner\Public</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
