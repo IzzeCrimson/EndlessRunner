@@ -12,8 +12,6 @@ void EmptyLinkFunctionForGeneratedCodeRunner() {}
 	ENDLESSRUNNER_API UClass* Z_Construct_UClass_ARunner();
 	ENDLESSRUNNER_API UClass* Z_Construct_UClass_ARunner_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
-	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_EndlessRunner();
 // End Cross Module References
 	void ARunner::StaticRegisterNativesARunner()
@@ -30,15 +28,6 @@ void EmptyLinkFunctionForGeneratedCodeRunner() {}
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_CameraBoom_MetaData[];
-#endif
-		static const UECodeGen_Private::FObjectPropertyParams NewProp_CameraBoom;
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_FollowCamera_MetaData[];
-#endif
-		static const UECodeGen_Private::FObjectPropertyParams NewProp_FollowCamera;
-		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
 	};
@@ -53,32 +42,6 @@ void EmptyLinkFunctionForGeneratedCodeRunner() {}
 		{ "ModuleRelativePath", "Public/Runner.h" },
 	};
 #endif
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARunner_Statics::NewProp_CameraBoom_MetaData[] = {
-		{ "AllowPrivateAccess", "true" },
-		{ "Category", "Camera" },
-		{ "Comment", "/** Camera boom positioning the camera behind the character */" },
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Public/Runner.h" },
-		{ "ToolTip", "Camera boom positioning the camera behind the character" },
-	};
-#endif
-	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ARunner_Statics::NewProp_CameraBoom = { "CameraBoom", nullptr, (EPropertyFlags)0x004000000008001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ARunner, CameraBoom), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ARunner_Statics::NewProp_CameraBoom_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARunner_Statics::NewProp_CameraBoom_MetaData)) };
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARunner_Statics::NewProp_FollowCamera_MetaData[] = {
-		{ "AllowPrivateAccess", "true" },
-		{ "Category", "Camera" },
-		{ "Comment", "/** Follow camera */" },
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Public/Runner.h" },
-		{ "ToolTip", "Follow camera" },
-	};
-#endif
-	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ARunner_Statics::NewProp_FollowCamera = { "FollowCamera", nullptr, (EPropertyFlags)0x004000000008001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ARunner, FollowCamera), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ARunner_Statics::NewProp_FollowCamera_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARunner_Statics::NewProp_FollowCamera_MetaData)) };
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ARunner_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARunner_Statics::NewProp_CameraBoom,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARunner_Statics::NewProp_FollowCamera,
-	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ARunner_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ARunner>::IsAbstract,
 	};
@@ -88,11 +51,11 @@ void EmptyLinkFunctionForGeneratedCodeRunner() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		Z_Construct_UClass_ARunner_Statics::PropPointers,
+		nullptr,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		UE_ARRAY_COUNT(Z_Construct_UClass_ARunner_Statics::PropPointers),
+		0,
 		0,
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_ARunner_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_ARunner_Statics::Class_MetaDataParams))
@@ -116,9 +79,9 @@ void EmptyLinkFunctionForGeneratedCodeRunner() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_william_isacsson_Unreal_Projects_EndlessRunner_EndlessRunner_Source_EndlessRunner_Public_Runner_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ARunner, ARunner::StaticClass, TEXT("ARunner"), &Z_Registration_Info_UClass_ARunner, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARunner), 1707215782U) },
+		{ Z_Construct_UClass_ARunner, ARunner::StaticClass, TEXT("ARunner"), &Z_Registration_Info_UClass_ARunner, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARunner), 3995898767U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_william_isacsson_Unreal_Projects_EndlessRunner_EndlessRunner_Source_EndlessRunner_Public_Runner_h_802766599(TEXT("/Script/EndlessRunner"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_william_isacsson_Unreal_Projects_EndlessRunner_EndlessRunner_Source_EndlessRunner_Public_Runner_h_4017218112(TEXT("/Script/EndlessRunner"),
 		Z_CompiledInDeferFile_FID_Users_william_isacsson_Unreal_Projects_EndlessRunner_EndlessRunner_Source_EndlessRunner_Public_Runner_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_william_isacsson_Unreal_Projects_EndlessRunner_EndlessRunner_Source_EndlessRunner_Public_Runner_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

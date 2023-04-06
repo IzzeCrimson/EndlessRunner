@@ -10,14 +10,6 @@ UCLASS()
 class ENDLESSRUNNER_API ARunner : public ACharacter
 {
 	GENERATED_BODY()
-	
-	/** Camera boom positioning the camera behind the character */
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
-	class USpringArmComponent* CameraBoom;
-
-	/** Follow camera */
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
-	class UCameraComponent* FollowCamera;
 
 public:
 	// Sets default values for this character's properties
@@ -28,11 +20,6 @@ protected:
 	virtual void BeginPlay() override;
 
 public:
-	/** Returns CameraBoom subobject **/
-	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
-	/** Returns FollowCamera subobject **/
-	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
-	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
