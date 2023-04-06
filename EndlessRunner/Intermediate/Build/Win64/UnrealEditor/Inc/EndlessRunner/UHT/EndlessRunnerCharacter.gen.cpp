@@ -56,6 +56,10 @@ void EmptyLinkFunctionForGeneratedCodeEndlessRunnerCharacter() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_LookAction_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_LookAction;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_MovementSpeed_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_MovementSpeed;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -133,6 +137,13 @@ void EmptyLinkFunctionForGeneratedCodeEndlessRunnerCharacter() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AEndlessRunnerCharacter_Statics::NewProp_LookAction = { "LookAction", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AEndlessRunnerCharacter, LookAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AEndlessRunnerCharacter_Statics::NewProp_LookAction_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEndlessRunnerCharacter_Statics::NewProp_LookAction_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEndlessRunnerCharacter_Statics::NewProp_MovementSpeed_MetaData[] = {
+		{ "Category", "Properties" },
+		{ "ModuleRelativePath", "EndlessRunnerCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AEndlessRunnerCharacter_Statics::NewProp_MovementSpeed = { "MovementSpeed", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AEndlessRunnerCharacter, MovementSpeed), METADATA_PARAMS(Z_Construct_UClass_AEndlessRunnerCharacter_Statics::NewProp_MovementSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEndlessRunnerCharacter_Statics::NewProp_MovementSpeed_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AEndlessRunnerCharacter_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEndlessRunnerCharacter_Statics::NewProp_CameraBoom,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEndlessRunnerCharacter_Statics::NewProp_FollowCamera,
@@ -140,6 +151,7 @@ void EmptyLinkFunctionForGeneratedCodeEndlessRunnerCharacter() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEndlessRunnerCharacter_Statics::NewProp_JumpAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEndlessRunnerCharacter_Statics::NewProp_MoveAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEndlessRunnerCharacter_Statics::NewProp_LookAction,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEndlessRunnerCharacter_Statics::NewProp_MovementSpeed,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AEndlessRunnerCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AEndlessRunnerCharacter>::IsAbstract,
@@ -178,9 +190,9 @@ void EmptyLinkFunctionForGeneratedCodeEndlessRunnerCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_william_isacsson_Unreal_Projects_EndlessRunner_EndlessRunner_Source_EndlessRunner_EndlessRunnerCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AEndlessRunnerCharacter, AEndlessRunnerCharacter::StaticClass, TEXT("AEndlessRunnerCharacter"), &Z_Registration_Info_UClass_AEndlessRunnerCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AEndlessRunnerCharacter), 1708591225U) },
+		{ Z_Construct_UClass_AEndlessRunnerCharacter, AEndlessRunnerCharacter::StaticClass, TEXT("AEndlessRunnerCharacter"), &Z_Registration_Info_UClass_AEndlessRunnerCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AEndlessRunnerCharacter), 471192555U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_william_isacsson_Unreal_Projects_EndlessRunner_EndlessRunner_Source_EndlessRunner_EndlessRunnerCharacter_h_2132438322(TEXT("/Script/EndlessRunner"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_william_isacsson_Unreal_Projects_EndlessRunner_EndlessRunner_Source_EndlessRunner_EndlessRunnerCharacter_h_4006556474(TEXT("/Script/EndlessRunner"),
 		Z_CompiledInDeferFile_FID_Users_william_isacsson_Unreal_Projects_EndlessRunner_EndlessRunner_Source_EndlessRunner_EndlessRunnerCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_william_isacsson_Unreal_Projects_EndlessRunner_EndlessRunner_Source_EndlessRunner_EndlessRunnerCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
