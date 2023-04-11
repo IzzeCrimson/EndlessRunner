@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\william.isacsson\\unreal projects\\endlessrunner\\endlessrunner\\source\\endlessrunner\\private\\movingplatform.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\william.isacsson\\unreal projects\\endlessrunner\\endlessrunner\\intermediate\\build\\win64\\endlessrunnereditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "c:\\users\\william.isacsson\\unreal projects\\endlessrunner\\endlessrunner\\intermediate\\build\\win64\\unrealeditor\\development\\endlessrunner\\definitions.endlessrunner.h",
+            "c:\\users\\william.isacsson\\unreal projects\\endlessrunner\\endlessrunner\\source\\endlessrunner\\public\\movingplatform.h",
+            "c:\\users\\william.isacsson\\unreal projects\\endlessrunner\\endlessrunner\\intermediate\\build\\win64\\unrealeditor\\inc\\endlessrunner\\uht\\movingplatform.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
