@@ -116,7 +116,7 @@ void AEndlessRunnerCharacter::Move(const FInputActionValue& Value)
 	
 		// add movement 
 		// AddMovementInput(ForwardDirection, MovementVector.Y);
-		AddMovementInput(RightDirection, MovementVector.X);
+		AddMovementInput(RightDirection - FVector(.3, 0, 0), MovementVector.X);
 		
 	}
 }
