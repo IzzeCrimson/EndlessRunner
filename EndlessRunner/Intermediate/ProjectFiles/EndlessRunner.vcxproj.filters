@@ -69,31 +69,19 @@
     <Filter Include="Source\EndlessRunner\Private">
       <UniqueIdentifier>{8E0FAD77-713C-381B-8248-FC00FA450FB4}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\EndlessRunner\Private\MovingPlatform.cpp">
+    <ClCompile Include="..\..\Source\EndlessRunner\Private\MyActorForTesting.cpp">
       <Filter>Source\EndlessRunner\Private</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\EndlessRunner\Private\MyTestClass.cpp">
-      <Filter>Source\EndlessRunner\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\EndlessRunner\Private\Runner.cpp">
-      <Filter>Source\EndlessRunner\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\EndlessRunner\Private\TestActor.cpp">
+    <ClCompile Include="..\..\Source\EndlessRunner\Private\MyTestActor.cpp">
       <Filter>Source\EndlessRunner\Private</Filter>
     </ClCompile>
     <Filter Include="Source\EndlessRunner\Public">
       <UniqueIdentifier>{6199CFC7-7BC7-3239-90FA-3D8CE90DCC04}</UniqueIdentifier>
     </Filter>
-    <ClInclude Include="..\..\Source\EndlessRunner\Public\MovingPlatform.h">
+    <ClInclude Include="..\..\Source\EndlessRunner\Public\MyActorForTesting.h">
       <Filter>Source\EndlessRunner\Public</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\EndlessRunner\Public\MyTestClass.h">
-      <Filter>Source\EndlessRunner\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\EndlessRunner\Public\Runner.h">
-      <Filter>Source\EndlessRunner\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\EndlessRunner\Public\TestActor.h">
+    <ClInclude Include="..\..\Source\EndlessRunner\Public\MyTestActor.h">
       <Filter>Source\EndlessRunner\Public</Filter>
     </ClInclude>
   </ItemGroup>

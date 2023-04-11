@@ -70,7 +70,7 @@ void AEndlessRunnerCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	
-	AddMovementInput(FVector(0, MovementSpeed, 0), 1);
+	//AddMovementInput(FVector(0, MovementSpeed, 0), 1);
 	
 }
 
@@ -91,7 +91,7 @@ void AEndlessRunnerCharacter::SetupPlayerInputComponent(class UInputComponent* P
 		EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &AEndlessRunnerCharacter::Move);
 
 		//Looking
-		//EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &AEndlessRunnerCharacter::Look);
+		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &AEndlessRunnerCharacter::Look);
 
 	}
 
@@ -109,13 +109,13 @@ void AEndlessRunnerCharacter::Move(const FInputActionValue& Value)
 		const FRotator YawRotation(0, Rotation.Yaw, 0);
 		//
 		// // get forward vector
-		// const FVector ForwardDirection = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
+		const FVector ForwardDirection = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
 	
 		// get right vector 
 		const FVector RightDirection = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
 	
 		// add movement 
-		// AddMovementInput(ForwardDirection, MovementVector.Y);
+		AddMovementInput(ForwardDirection, MovementVector.Y);
 		AddMovementInput(RightDirection - FVector(.3, 0, 0), MovementVector.X);
 		
 	}
