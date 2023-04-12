@@ -51,9 +51,6 @@ protected:
 	/** Called for looking input */
 	void Look(const FInputActionValue& Value);
 
-	UPROPERTY(EditAnywhere, Category = "Properties");
-	float MovementSpeed = 1;
-
 	
 protected:
 	// APawn interface

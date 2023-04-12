@@ -2,13 +2,15 @@
 
 
 #include "MovingPlatform.h"
+#include "EnhancedInputSubsystems.h"
 
 // Sets default values
 AMovingPlatform::AMovingPlatform()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
+	Floor = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("FloorComponent"));
+	
 
 }
 
@@ -18,7 +20,7 @@ void AMovingPlatform::BeginPlay()
 	Super::BeginPlay();
 	
 	CurrentLocation = this->GetActorLocation();
-	speed = 40;
+	MovementSpeed = 200;
 	
 }
 
@@ -27,7 +29,7 @@ void AMovingPlatform::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	
-	CurrentLocation.Y -= speed * DeltaTime;
+	CurrentLocation.Y -= MovementSpeed * DeltaTime;
 	SetActorLocation(CurrentLocation);
 	
 }

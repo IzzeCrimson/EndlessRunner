@@ -15,8 +15,6 @@ public:
 	// Sets default values for this actor's properties
 	AMovingPlatform();
 
-	FVector CurrentLocation;
-	float speed;
 
 protected:
 	// Called when the game starts or when spawned
@@ -26,4 +24,15 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+private:
+	
+	FVector CurrentLocation;
+	float MovementSpeed;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = MovingPlatform, meta = (AllowPrivateAccess = "true"))
+	UStaticMeshComponent* Floor;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = MovingPlatform, meta = (AllowPrivateAccess = "true"))
+	TSubclassOf<AActor> PillarClass;
+	
 };

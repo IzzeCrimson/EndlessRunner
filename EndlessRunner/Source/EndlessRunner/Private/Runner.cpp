@@ -3,6 +3,10 @@
 
 #include "Runner.h"
 
+#include "EnhancedInputComponent.h"
+#include "EnhancedInputSubsystems.h"
+#include "EndlessRunner/EndlessRunnerCharacter.h"
+
 // Sets default values
 ARunner::ARunner()
 {
@@ -10,6 +14,7 @@ ARunner::ARunner()
 	PrimaryActorTick.bCanEverTick = true;
 
 }
+
 
 // Called when the game starts or when spawned
 void ARunner::BeginPlay()
@@ -22,13 +27,10 @@ void ARunner::BeginPlay()
 void ARunner::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	
 
 }
 
-// Called to bind functionality to input
-void ARunner::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
-{
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
-}
+
 
