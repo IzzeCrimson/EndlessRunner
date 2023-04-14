@@ -72,6 +72,12 @@
     <ClCompile Include="..\..\Source\EndlessRunner\Private\MovingPlatform.cpp">
       <Filter>Source\EndlessRunner\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\EndlessRunner\Private\Obstacle.cpp">
+      <Filter>Source\EndlessRunner\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\EndlessRunner\Private\ObstacleSpawner.cpp">
+      <Filter>Source\EndlessRunner\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\EndlessRunner\Private\Runner.cpp">
       <Filter>Source\EndlessRunner\Private</Filter>
     </ClCompile>
@@ -79,6 +85,12 @@
       <UniqueIdentifier>{6199CFC7-7BC7-3239-90FA-3D8CE90DCC04}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\EndlessRunner\Public\MovingPlatform.h">
+      <Filter>Source\EndlessRunner\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\EndlessRunner\Public\Obstacle.h">
+      <Filter>Source\EndlessRunner\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\EndlessRunner\Public\ObstacleSpawner.h">
       <Filter>Source\EndlessRunner\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\EndlessRunner\Public\Runner.h">

@@ -34,5 +34,10 @@ private:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = MovingPlatform, meta = (AllowPrivateAccess = "true"))
 	TSubclassOf<AActor> PillarClass;
+
+	FBox Bounds;
+	FVector Size;
+	FVector MaxVector;
+	FVector MinVector;
 	
 };
