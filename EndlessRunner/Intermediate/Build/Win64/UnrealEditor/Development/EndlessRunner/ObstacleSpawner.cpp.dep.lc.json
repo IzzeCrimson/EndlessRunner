@@ -6,7 +6,8 @@
         "PCH": "c:\\users\\william.isacsson\\unreal projects\\endlessrunner\\endlessrunner\\intermediate\\build\\win64\\endlessrunnereditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
         "Includes": [
             "c:\\users\\william.isacsson\\unreal projects\\endlessrunner\\endlessrunner\\intermediate\\build\\win64\\unrealeditor\\development\\endlessrunner\\definitions.endlessrunner.h",
-            "c:\\users\\william.isacsson\\unreal projects\\endlessrunner\\endlessrunner\\source\\endlessrunner\\public\\obstaclespawner.h"
+            "c:\\users\\william.isacsson\\unreal projects\\endlessrunner\\endlessrunner\\source\\endlessrunner\\public\\obstaclespawner.h",
+            "c:\\users\\william.isacsson\\unreal projects\\endlessrunner\\endlessrunner\\intermediate\\build\\win64\\unrealeditor\\inc\\endlessrunner\\uht\\obstaclespawner.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

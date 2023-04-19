@@ -4,16 +4,16 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "Obstacle.generated.h"
+#include "MovablePlatform.generated.h"
 
 UCLASS()
-class ENDLESSRUNNER_API AObstacle : public AActor
+class ENDLESSRUNNER_API AMovablePlatform : public AActor
 {
 	GENERATED_BODY()
 	
 public:	
 	// Sets default values for this actor's properties
-	AObstacle();
+	AMovablePlatform();
 
 protected:
 	// Called when the game starts or when spawned
@@ -23,8 +23,8 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-protected:
+private:
 	FVector CurrentLocation;
-	float MovementSpeed;
+	float Speed;
 	
 };

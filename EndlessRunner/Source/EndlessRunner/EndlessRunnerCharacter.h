@@ -66,5 +66,6 @@ public:
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
 	virtual void Tick(float DeltaTime) override;
+	
 };
 
