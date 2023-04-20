@@ -20,11 +20,13 @@ class UDamageType;
 #define FID_Users_william_isacsson_Unreal_Projects_EndlessRunner_EndlessRunner_Source_EndlessRunner_Public_HealthComponent_h_13_SPARSE_DATA
 #define FID_Users_william_isacsson_Unreal_Projects_EndlessRunner_EndlessRunner_Source_EndlessRunner_Public_HealthComponent_h_13_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execSetDamageBool); \
 	DECLARE_FUNCTION(execTakeDamage);
 
 
 #define FID_Users_william_isacsson_Unreal_Projects_EndlessRunner_EndlessRunner_Source_EndlessRunner_Public_HealthComponent_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execSetDamageBool); \
 	DECLARE_FUNCTION(execTakeDamage);
 
 

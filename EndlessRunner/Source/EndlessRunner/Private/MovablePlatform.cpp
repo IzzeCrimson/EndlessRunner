@@ -10,7 +10,7 @@ AMovablePlatform::AMovablePlatform()
 	PrimaryActorTick.bCanEverTick = true;
 
 	CurrentLocation = this->GetActorLocation();
-	Speed = 200.0f;
+	Speed = 500.0f;
 	
 }
 

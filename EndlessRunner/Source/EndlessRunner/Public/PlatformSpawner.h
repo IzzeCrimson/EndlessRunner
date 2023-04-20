@@ -37,7 +37,7 @@ protected:
 
 private:
 	UPROPERTY(EditAnywhere, Category = "Platform Components", meta = (AllowPrivateAccess = "true"))
-	TSubclassOf<AActor> Platform;
+	TArray<TSubclassOf<AActor>> Platforms;
 
 	FVector Location;
 	FRotator Rotation;

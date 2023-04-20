@@ -12,7 +12,10 @@ UHealthComponent::UHealthComponent()
 
 	DeafaultHealth = 3;
 	CurrentHealth = DeafaultHealth;
-	
+
+	bCanTakeDamage = true;
+
+	InvincibilityDuration = 3;
 }
 
 
@@ -30,8 +33,21 @@ void UHealthComponent::BeginPlay()
 
 void UHealthComponent::TakeDamage(AActor* DamagedActor, float Damage, const UDamageType* DamageType, AController* InstigatedBy, AActor* DamageCauser)
 {
-	CurrentHealth = CurrentHealth - Damage;
-	UE_LOG(LogTemp, Warning, TEXT("Current Health is: %f"), CurrentHealth);
+	if (bCanTakeDamage)
+	{
+		CurrentHealth = CurrentHealth - Damage;
+		UE_LOG(LogTemp, Warning, TEXT("Current Health is: %f"), CurrentHealth);
+		bCanTakeDamage = false;
+		GetWorld()->GetTimerManager().SetTimer(InvincibilityTimer, this, &UHealthComponent::SetDamageBool, InvincibilityDuration, false);
+		
+	}
+}
+
+void UHealthComponent::SetDamageBool()
+{
+	bCanTakeDamage = true;
+	InvincibilityTimer.Invalidate();
+	
 }
 
 

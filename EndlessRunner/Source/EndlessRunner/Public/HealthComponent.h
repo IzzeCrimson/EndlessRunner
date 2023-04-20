@@ -26,7 +26,16 @@ protected:
 	UPROPERTY(BlueprintReadOnly)
 	float CurrentHealth;
 
+	UPROPERTY(BlueprintReadOnly)
+	bool bCanTakeDamage;
+	
+	FTimerHandle InvincibilityTimer;
+
+	float InvincibilityDuration;
+
 	UFUNCTION()
 	void TakeDamage(AActor* DamagedActor, float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser);
-		
+
+	UFUNCTION()
+	void SetDamageBool();
 };

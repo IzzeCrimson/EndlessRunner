@@ -40,6 +40,6 @@ void APlatformSpawner::OnOverlapEnd(class UPrimitiveComponent* OverlappedComp, c
 
 void APlatformSpawner::SpawnPlatform()
 {
-	GetWorld()->SpawnActor(Platform, &Location, &Rotation);
+	GetWorld()->SpawnActor(Platforms[FMath::RandRange(0, Platforms.Max() - 1)], &Location, &Rotation);
 	
 }
