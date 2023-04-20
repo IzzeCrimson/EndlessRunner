@@ -9,6 +9,8 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
+#include "Engine/DamageEvents.h"
+#include "Kismet/GameplayStatics.h"
 
 
 //////////////////////////////////////////////////////////////////////////
@@ -17,7 +19,8 @@
 AEndlessRunnerCharacter::AEndlessRunnerCharacter()
 {
 	// Set size for collision capsule
-	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
+	ThisCapsuleComponent = GetCapsuleComponent();
+	ThisCapsuleComponent->InitCapsuleSize(42.f, 96.0f);
 	
 	// Don't rotate when the controller rotates. Let that just affect the camera.
 	bUseControllerRotationPitch = false;
@@ -56,6 +59,8 @@ void AEndlessRunnerCharacter::BeginPlay()
 	// Call the base class  
 	Super::BeginPlay();
 
+	ThisCapsuleComponent->OnComponentBeginOverlap.AddDynamic(this, &AEndlessRunnerCharacter::OnOverlapBegin);
+	
 	//Add Input Mapping Context
 	if (APlayerController* PlayerController = Cast<APlayerController>(Controller))
 	{
@@ -64,6 +69,14 @@ void AEndlessRunnerCharacter::BeginPlay()
 			Subsystem->AddMappingContext(DefaultMappingContext, 0);
 		}
 	}
+}
+
+void AEndlessRunnerCharacter::OnOverlapBegin(UPrimitiveComponent* newComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex,
+	bool bFromSweep, const FHitResult& SweepResult)
+{
+	//UE_LOG(LogTemp, Warning, TEXT("Other Actor is: %s"), *OtherActor->GetName());
+	FDamageEvent DamageEvent;
+	this->TakeDamage(1, DamageEvent, UGameplayStatics::GetPlayerController(GetWorld(), 0), OtherActor);
 }
 
 void AEndlessRunnerCharacter::Tick(float DeltaTime)

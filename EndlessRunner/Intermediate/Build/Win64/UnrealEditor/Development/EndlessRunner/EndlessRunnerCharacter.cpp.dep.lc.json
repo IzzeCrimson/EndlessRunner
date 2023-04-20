@@ -15,6 +15,8 @@
             "c:\\program files\\epic games\\ue_5.1\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\character.generated.h",
             "c:\\program files\\epic games\\ue_5.1\\engine\\plugins\\enhancedinput\\source\\enhancedinput\\public\\inputactionvalue.h",
             "c:\\program files\\epic games\\ue_5.1\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\inputactionvalue.generated.h",
+            "c:\\program files\\epic games\\ue_5.1\\engine\\source\\runtime\\engine\\classes\\engine\\damageevents.h",
+            "c:\\program files\\epic games\\ue_5.1\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\damageevents.generated.h",
             "c:\\users\\william.isacsson\\unreal projects\\endlessrunner\\endlessrunner\\intermediate\\build\\win64\\unrealeditor\\inc\\endlessrunner\\uht\\endlessrunnercharacter.generated.h",
             "c:\\program files\\epic games\\ue_5.1\\engine\\source\\runtime\\engine\\classes\\camera\\cameracomponent.h",
             "c:\\program files\\epic games\\ue_5.1\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\cameracomponent.generated.h",
@@ -60,7 +62,17 @@
             "c:\\program files\\epic games\\ue_5.1\\engine\\plugins\\enhancedinput\\source\\enhancedinput\\public\\enhancedplayerinput.h",
             "c:\\program files\\epic games\\ue_5.1\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\enhancedplayerinput.generated.h",
             "c:\\program files\\epic games\\ue_5.1\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\enhancedinputsubsysteminterface.generated.h",
-            "c:\\program files\\epic games\\ue_5.1\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\enhancedinputsubsystems.generated.h"
+            "c:\\program files\\epic games\\ue_5.1\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\enhancedinputsubsystems.generated.h",
+            "c:\\program files\\epic games\\ue_5.1\\engine\\source\\runtime\\engine\\classes\\kismet\\gameplaystatics.h",
+            "c:\\program files\\epic games\\ue_5.1\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetsystemlibrary.h",
+            "c:\\program files\\epic games\\ue_5.1\\engine\\source\\runtime\\coreuobject\\public\\uobject\\propertyaccessutil.h",
+            "c:\\program files\\epic games\\ue_5.1\\engine\\source\\runtime\\coreuobject\\public\\assetregistry\\arfilter.h",
+            "c:\\program files\\epic games\\ue_5.1\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\kismetsystemlibrary.generated.h",
+            "c:\\program files\\epic games\\ue_5.1\\engine\\source\\runtime\\engine\\classes\\sound\\dialoguetypes.h",
+            "c:\\program files\\epic games\\ue_5.1\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\dialoguetypes.generated.h",
+            "c:\\program files\\epic games\\ue_5.1\\engine\\source\\runtime\\engine\\classes\\kismet\\gameplaystaticstypes.h",
+            "c:\\program files\\epic games\\ue_5.1\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gameplaystaticstypes.generated.h",
+            "c:\\program files\\epic games\\ue_5.1\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gameplaystatics.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

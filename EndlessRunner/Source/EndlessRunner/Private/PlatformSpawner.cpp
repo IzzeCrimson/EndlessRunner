@@ -6,13 +6,12 @@
 // Sets default values
 APlatformSpawner::APlatformSpawner()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
+	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	PrimaryActorTick.bCanEverTick = false;
 
 	BoxCollider = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxCollider"));
 	BoxCollider->SetupAttachment(RootComponent);
 	BoxCollider->SetGenerateOverlapEvents(true);
-
 }
 
 // Called when the game starts or when spawned
@@ -22,8 +21,8 @@ void APlatformSpawner::BeginPlay()
 
 	Location = GetActorLocation();
 	Rotation = GetActorRotation();
-	GetWorld()->SpawnActor(Platform, &Location, &Rotation);
-	
+	SpawnPlatform();
+
 	BoxCollider->OnComponentEndOverlap.AddDynamic(this, &APlatformSpawner::OnOverlapEnd);
 }
 
@@ -31,12 +30,16 @@ void APlatformSpawner::BeginPlay()
 void APlatformSpawner::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 }
 
-void APlatformSpawner::OnOverlapEnd(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+void APlatformSpawner::OnOverlapEnd(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor,
+                                    class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	UE_LOG(LogTemp, Warning, TEXT("End of overlap"));
-	GetWorld()->SpawnActor(Platform, &Location, &Rotation);
+	SpawnPlatform();
 }
 
+void APlatformSpawner::SpawnPlatform()
+{
+	GetWorld()->SpawnActor(Platform, &Location, &Rotation);
+	
+}

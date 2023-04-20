@@ -87,7 +87,7 @@ void EmptyLinkFunctionForGeneratedCodePlatformSpawner() {}
 		{ "ModuleRelativePath", "Public/PlatformSpawner.h" },
 	};
 #endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_APlatformSpawner_OnOverlapEnd_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APlatformSpawner, nullptr, "OnOverlapEnd", nullptr, nullptr, sizeof(Z_Construct_UFunction_APlatformSpawner_OnOverlapEnd_Statics::PlatformSpawner_eventOnOverlapEnd_Parms), Z_Construct_UFunction_APlatformSpawner_OnOverlapEnd_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_APlatformSpawner_OnOverlapEnd_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_APlatformSpawner_OnOverlapEnd_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_APlatformSpawner_OnOverlapEnd_Statics::Function_MetaDataParams)) };
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_APlatformSpawner_OnOverlapEnd_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APlatformSpawner, nullptr, "OnOverlapEnd", nullptr, nullptr, sizeof(Z_Construct_UFunction_APlatformSpawner_OnOverlapEnd_Statics::PlatformSpawner_eventOnOverlapEnd_Parms), Z_Construct_UFunction_APlatformSpawner_OnOverlapEnd_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_APlatformSpawner_OnOverlapEnd_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_APlatformSpawner_OnOverlapEnd_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_APlatformSpawner_OnOverlapEnd_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_APlatformSpawner_OnOverlapEnd()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -126,7 +126,7 @@ void EmptyLinkFunctionForGeneratedCodePlatformSpawner() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_EndlessRunner,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_APlatformSpawner_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_APlatformSpawner_OnOverlapEnd, "OnOverlapEnd" }, // 3410678504
+		{ &Z_Construct_UFunction_APlatformSpawner_OnOverlapEnd, "OnOverlapEnd" }, // 1930516500
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlatformSpawner_Statics::Class_MetaDataParams[] = {
@@ -192,9 +192,9 @@ void EmptyLinkFunctionForGeneratedCodePlatformSpawner() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_william_isacsson_Unreal_Projects_EndlessRunner_EndlessRunner_Source_EndlessRunner_Public_PlatformSpawner_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_APlatformSpawner, APlatformSpawner::StaticClass, TEXT("APlatformSpawner"), &Z_Registration_Info_UClass_APlatformSpawner, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APlatformSpawner), 1687525460U) },
+		{ Z_Construct_UClass_APlatformSpawner, APlatformSpawner::StaticClass, TEXT("APlatformSpawner"), &Z_Registration_Info_UClass_APlatformSpawner, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APlatformSpawner), 2230237556U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_william_isacsson_Unreal_Projects_EndlessRunner_EndlessRunner_Source_EndlessRunner_Public_PlatformSpawner_h_2438198468(TEXT("/Script/EndlessRunner"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_william_isacsson_Unreal_Projects_EndlessRunner_EndlessRunner_Source_EndlessRunner_Public_PlatformSpawner_h_2468700072(TEXT("/Script/EndlessRunner"),
 		Z_CompiledInDeferFile_FID_Users_william_isacsson_Unreal_Projects_EndlessRunner_EndlessRunner_Source_EndlessRunner_Public_PlatformSpawner_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_william_isacsson_Unreal_Projects_EndlessRunner_EndlessRunner_Source_EndlessRunner_Public_PlatformSpawner_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

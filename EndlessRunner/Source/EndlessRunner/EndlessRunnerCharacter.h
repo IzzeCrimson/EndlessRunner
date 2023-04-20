@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "InputActionValue.h"
-#include "Math/Vector.h"
+#include "Engine/DamageEvents.h"
 #include "EndlessRunnerCharacter.generated.h"
 
 
@@ -38,6 +38,10 @@ class AEndlessRunnerCharacter : public ACharacter
 	/** Look Input Action */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
 	class UInputAction* LookAction;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = CapsuleCollider, meta = (AllowPrivateAccess = "true"))
+	UCapsuleComponent* ThisCapsuleComponent;
+
 
 public:
 	AEndlessRunnerCharacter();
@@ -58,6 +62,10 @@ protected:
 	
 	// To add mapping context
 	virtual void BeginPlay();
+
+	UFUNCTION()
+	void OnOverlapBegin(class UPrimitiveComponent* newComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex,
+		bool bFromSweep, const FHitResult& SweepResult);
 
 public:
 	/** Returns CameraBoom subobject **/

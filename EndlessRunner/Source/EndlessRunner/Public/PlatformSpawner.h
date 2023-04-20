@@ -27,9 +27,13 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+protected:
 	
 	UFUNCTION()
-	 void OnOverlapEnd(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+	void OnOverlapEnd(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+
+	void SpawnPlatform();
 
 private:
 	UPROPERTY(EditAnywhere, Category = "Platform Components", meta = (AllowPrivateAccess = "true"))
@@ -37,7 +41,5 @@ private:
 
 	FVector Location;
 	FRotator Rotation;
-
-
 	
 };
