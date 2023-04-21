@@ -28,7 +28,7 @@ Which gets called when the player collides with a blueprint templated based on t
 
 In EndlessRunnerCharacter.cpp
 
-
+```
 void AEndlessRunnerCharacter::OnOverlapBegin(UPrimitiveComponent* newComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex,
 	bool bFromSweep, const FHitResult& SweepResult)
 {
@@ -41,13 +41,13 @@ void AEndlessRunnerCharacter::OnOverlapBegin(UPrimitiveComponent* newComp, AActo
 	}
 }
 
-
+```
 
 And whenever the player takes damage I set a bool called **bCantakeDamage** to false to control when the player can take damage. And when the bool is set to false I start a timer which turns to bool to true after x amount of time.
 
 In HealthComponent.cpp
 
-
+```
 void UHealthComponent::TakeDamage(AActor* DamagedActor, float Damage, const UDamageType* DamageType, AController* InstigatedBy, AActor* DamageCauser)
 {
 	if (bCanTakeDamage)
@@ -66,7 +66,7 @@ void UHealthComponent::SetDamageBool()
 	InvincibilityTimer.Invalidate();
 }
 
-
+```
 
 #### Spawning and "Removing" Platforms
 
@@ -76,7 +76,7 @@ When it comes to removing/deleting the platforms I have a large collider placed 
 
 In PlatformDestroyer.cpp
 
-
+```
 void APlatformDestroyer::OnOverlapBegin(UPrimitiveComponent* newComp, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
@@ -86,6 +86,6 @@ void APlatformDestroyer::OnOverlapBegin(UPrimitiveComponent* newComp, AActor* Ot
 		Interface->DeleteActor(OtherActor);
 	}
 }
-
+```
 
 
