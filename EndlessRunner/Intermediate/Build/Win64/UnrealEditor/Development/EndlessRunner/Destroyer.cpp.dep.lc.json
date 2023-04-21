@@ -1,0 +1,21 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\william.isacsson\\unreal projects\\endlessrunner\\endlessrunner\\source\\endlessrunner\\private\\destroyer.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\william.isacsson\\unreal projects\\endlessrunner\\endlessrunner\\intermediate\\build\\win64\\endlessrunnereditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "c:\\users\\william.isacsson\\unreal projects\\endlessrunner\\endlessrunner\\intermediate\\build\\win64\\unrealeditor\\development\\endlessrunner\\definitions.endlessrunner.h",
+            "c:\\users\\william.isacsson\\unreal projects\\endlessrunner\\endlessrunner\\source\\endlessrunner\\public\\destroyer.h",
+            "c:\\users\\william.isacsson\\unreal projects\\endlessrunner\\endlessrunner\\intermediate\\build\\win64\\unrealeditor\\inc\\endlessrunner\\uht\\destroyer.generated.h",
+            "c:\\users\\william.isacsson\\unreal projects\\endlessrunner\\endlessrunner\\source\\endlessrunner\\public\\cleanupinterface.h",
+            "c:\\users\\william.isacsson\\unreal projects\\endlessrunner\\endlessrunner\\intermediate\\build\\win64\\unrealeditor\\inc\\endlessrunner\\uht\\cleanupinterface.generated.h",
+            "c:\\program files\\epic games\\ue_5.1\\engine\\source\\runtime\\engine\\classes\\components\\boxcomponent.h",
+            "c:\\program files\\epic games\\ue_5.1\\engine\\source\\runtime\\engine\\classes\\components\\shapecomponent.h",
+            "c:\\program files\\epic games\\ue_5.1\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\shapecomponent.generated.h",
+            "c:\\program files\\epic games\\ue_5.1\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\boxcomponent.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

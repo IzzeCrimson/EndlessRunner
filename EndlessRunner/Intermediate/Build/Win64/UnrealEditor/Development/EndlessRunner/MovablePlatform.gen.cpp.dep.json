@@ -7,6 +7,8 @@
         "Includes": [
             "c:\\users\\william.isacsson\\unreal projects\\endlessrunner\\endlessrunner\\intermediate\\build\\win64\\unrealeditor\\development\\endlessrunner\\definitions.endlessrunner.h",
             "c:\\users\\william.isacsson\\unreal projects\\endlessrunner\\endlessrunner\\source\\endlessrunner\\public\\movableplatform.h",
+            "c:\\users\\william.isacsson\\unreal projects\\endlessrunner\\endlessrunner\\source\\endlessrunner\\public\\cleanupinterface.h",
+            "c:\\users\\william.isacsson\\unreal projects\\endlessrunner\\endlessrunner\\intermediate\\build\\win64\\unrealeditor\\inc\\endlessrunner\\uht\\cleanupinterface.generated.h",
             "c:\\users\\william.isacsson\\unreal projects\\endlessrunner\\endlessrunner\\intermediate\\build\\win64\\unrealeditor\\inc\\endlessrunner\\uht\\movableplatform.generated.h"
         ],
         "ImportedModules": [],

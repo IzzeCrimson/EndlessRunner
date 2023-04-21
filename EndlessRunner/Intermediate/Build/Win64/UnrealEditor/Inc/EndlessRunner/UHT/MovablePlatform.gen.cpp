@@ -11,6 +11,7 @@ void EmptyLinkFunctionForGeneratedCodeMovablePlatform() {}
 // Cross Module References
 	ENDLESSRUNNER_API UClass* Z_Construct_UClass_AMovablePlatform();
 	ENDLESSRUNNER_API UClass* Z_Construct_UClass_AMovablePlatform_NoRegister();
+	ENDLESSRUNNER_API UClass* Z_Construct_UClass_UCleanupInterface_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_EndlessRunner();
 // End Cross Module References
@@ -28,6 +29,7 @@ void EmptyLinkFunctionForGeneratedCodeMovablePlatform() {}
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+		static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
 	};
@@ -41,6 +43,9 @@ void EmptyLinkFunctionForGeneratedCodeMovablePlatform() {}
 		{ "ModuleRelativePath", "Public/MovablePlatform.h" },
 	};
 #endif
+		const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AMovablePlatform_Statics::InterfaceParams[] = {
+			{ Z_Construct_UClass_UCleanupInterface_NoRegister, (int32)VTABLE_OFFSET(AMovablePlatform, ICleanupInterface), false },  // 3634383242
+		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AMovablePlatform_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AMovablePlatform>::IsAbstract,
 	};
@@ -51,11 +56,11 @@ void EmptyLinkFunctionForGeneratedCodeMovablePlatform() {}
 		DependentSingletons,
 		nullptr,
 		nullptr,
-		nullptr,
+		InterfaceParams,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
 		0,
-		0,
+		UE_ARRAY_COUNT(InterfaceParams),
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AMovablePlatform_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_AMovablePlatform_Statics::Class_MetaDataParams))
 	};
@@ -78,9 +83,9 @@ void EmptyLinkFunctionForGeneratedCodeMovablePlatform() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_william_isacsson_Unreal_Projects_EndlessRunner_EndlessRunner_Source_EndlessRunner_Public_MovablePlatform_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AMovablePlatform, AMovablePlatform::StaticClass, TEXT("AMovablePlatform"), &Z_Registration_Info_UClass_AMovablePlatform, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMovablePlatform), 4265529759U) },
+		{ Z_Construct_UClass_AMovablePlatform, AMovablePlatform::StaticClass, TEXT("AMovablePlatform"), &Z_Registration_Info_UClass_AMovablePlatform, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMovablePlatform), 3909543318U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_william_isacsson_Unreal_Projects_EndlessRunner_EndlessRunner_Source_EndlessRunner_Public_MovablePlatform_h_2511481270(TEXT("/Script/EndlessRunner"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_william_isacsson_Unreal_Projects_EndlessRunner_EndlessRunner_Source_EndlessRunner_Public_MovablePlatform_h_1545003543(TEXT("/Script/EndlessRunner"),
 		Z_CompiledInDeferFile_FID_Users_william_isacsson_Unreal_Projects_EndlessRunner_EndlessRunner_Source_EndlessRunner_Public_MovablePlatform_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_william_isacsson_Unreal_Projects_EndlessRunner_EndlessRunner_Source_EndlessRunner_Public_MovablePlatform_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

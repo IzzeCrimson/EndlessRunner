@@ -13,6 +13,7 @@ AObstacle::AObstacle()
 	
 	Cube = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Cube"));
 	
+	SetRootComponent(Cube);
 	
 }
 

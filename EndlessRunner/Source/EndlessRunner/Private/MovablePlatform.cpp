@@ -12,7 +12,7 @@ AMovablePlatform::AMovablePlatform()
 	CurrentLocation = this->GetActorLocation();
 	Speed = 500.0f;
 
-	bIsActive = false;
+	bIsActive = true;
 	
 }
 

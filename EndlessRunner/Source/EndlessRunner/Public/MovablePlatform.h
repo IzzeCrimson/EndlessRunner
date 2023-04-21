@@ -4,10 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "CleanupInterface.h"
 #include "MovablePlatform.generated.h"
 
 UCLASS()
-class ENDLESSRUNNER_API AMovablePlatform : public AActor
+class ENDLESSRUNNER_API AMovablePlatform : public AActor, public ICleanupInterface
 {
 	GENERATED_BODY()
 	
@@ -24,6 +25,7 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	bool bIsActive;
+
 
 private:
 	FVector CurrentLocation;
