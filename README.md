@@ -1,7 +1,7 @@
 # EndlessRunner
 ## Part 1
  
-`void APlatformSpawner::BeginPlay()
+void APlatformSpawner::BeginPlay()
 {
 	Super::BeginPlay();
 
@@ -10,4 +10,4 @@
 	SpawnPlatform();
 
 	BoxCollider->OnComponentEndOverlap.AddDynamic(this, &APlatformSpawner::OnOverlapEnd);
-}`
+}
