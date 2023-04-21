@@ -13,9 +13,7 @@ class ENDLESSRUNNER_API AObstacle : public AActor
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Obstacle Components", meta = (AllowPrivateAccess = "true"))
 	UStaticMeshComponent* Cube;
-	
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Obstacle Components", meta = (AllowPrivateAccess = "true"))
-	USceneComponent* Root;
+
 	
 public:	
 	// Sets default values for this actor's properties

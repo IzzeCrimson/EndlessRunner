@@ -9,6 +9,7 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
+#include "Obstacle.h"
 #include "Engine/DamageEvents.h"
 #include "Kismet/GameplayStatics.h"
 
@@ -75,8 +76,12 @@ void AEndlessRunnerCharacter::OnOverlapBegin(UPrimitiveComponent* newComp, AActo
 	bool bFromSweep, const FHitResult& SweepResult)
 {
 	//UE_LOG(LogTemp, Warning, TEXT("Other Actor is: %s"), *OtherActor->GetName());
-	FDamageEvent DamageEvent;
-	this->TakeDamage(1, DamageEvent, UGameplayStatics::GetPlayerController(GetWorld(), 0), OtherActor);
+	if (OtherActor->IsA(AObstacle::StaticClass()))
+	{
+		FDamageEvent DamageEvent;
+		this->TakeDamage(1, DamageEvent, UGameplayStatics::GetPlayerController(GetWorld(), 0), OtherActor);
+
+	}
 }
 
 void AEndlessRunnerCharacter::Tick(float DeltaTime)
