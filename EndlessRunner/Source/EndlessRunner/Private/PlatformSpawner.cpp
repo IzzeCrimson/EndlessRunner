@@ -12,6 +12,7 @@ APlatformSpawner::APlatformSpawner()
 	BoxCollider = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxCollider"));
 	BoxCollider->SetupAttachment(RootComponent);
 	BoxCollider->SetGenerateOverlapEvents(true);
+
 }
 
 // Called when the game starts or when spawned
@@ -36,10 +37,12 @@ void APlatformSpawner::OnOverlapEnd(class UPrimitiveComponent* OverlappedComp, c
                                     class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
 	SpawnPlatform();
+	
 }
 
 void APlatformSpawner::SpawnPlatform()
 {
-	GetWorld()->SpawnActor(Platforms[FMath::RandRange(0, Platforms.Max() - 1)], &Location, &Rotation);
+	RandomNumber = FMath::RandRange(0, TemplatePlatforms.Max() - 1);
+	GetWorld()->SpawnActor(TemplatePlatforms[RandomNumber], &Location, &Rotation);
 	
 }

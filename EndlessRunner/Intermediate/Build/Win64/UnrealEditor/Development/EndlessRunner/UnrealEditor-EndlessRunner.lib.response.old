@@ -7,6 +7,8 @@
 /IGNORE:4221
 /NODEFAULTLIB
 "C:\Users\william.isacsson\Unreal Projects\EndlessRunner\EndlessRunner\Intermediate\Build\Win64\EndlessRunnerEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\william.isacsson\Unreal Projects\EndlessRunner\EndlessRunner\Intermediate\Build\Win64\UnrealEditor\Development\EndlessRunner\Cleaner.gen.cpp.obj"
+"C:\Users\william.isacsson\Unreal Projects\EndlessRunner\EndlessRunner\Intermediate\Build\Win64\UnrealEditor\Development\EndlessRunner\CleanupInterface.gen.cpp.obj"
 "C:\Users\william.isacsson\Unreal Projects\EndlessRunner\EndlessRunner\Intermediate\Build\Win64\UnrealEditor\Development\EndlessRunner\EndlessRunner.init.gen.cpp.obj"
 "C:\Users\william.isacsson\Unreal Projects\EndlessRunner\EndlessRunner\Intermediate\Build\Win64\UnrealEditor\Development\EndlessRunner\EndlessRunnerCharacter.gen.cpp.obj"
 "C:\Users\william.isacsson\Unreal Projects\EndlessRunner\EndlessRunner\Intermediate\Build\Win64\UnrealEditor\Development\EndlessRunner\EndlessRunnerGameMode.gen.cpp.obj"
@@ -19,7 +21,9 @@
 "C:\Users\william.isacsson\Unreal Projects\EndlessRunner\EndlessRunner\Intermediate\Build\Win64\UnrealEditor\Development\EndlessRunner\EndlessRunnerGameMode.cpp.obj"
 "C:\Users\william.isacsson\Unreal Projects\EndlessRunner\EndlessRunner\Intermediate\Build\Win64\UnrealEditor\Development\EndlessRunner\HealthComponent.cpp.obj"
 "C:\Users\william.isacsson\Unreal Projects\EndlessRunner\EndlessRunner\Intermediate\Build\Win64\UnrealEditor\Development\EndlessRunner\Obstacle.cpp.obj"
-"C:\Users\william.isacsson\Unreal Projects\EndlessRunner\EndlessRunner\Intermediate\Build\Win64\UnrealEditor\Development\EndlessRunner\MovablePlatform.cpp.obj"
 "C:\Users\william.isacsson\Unreal Projects\EndlessRunner\EndlessRunner\Intermediate\Build\Win64\UnrealEditor\Development\EndlessRunner\PlatformSpawner.cpp.obj"
+"C:\Users\william.isacsson\Unreal Projects\EndlessRunner\EndlessRunner\Intermediate\Build\Win64\UnrealEditor\Development\EndlessRunner\Cleaner.cpp.obj"
+"C:\Users\william.isacsson\Unreal Projects\EndlessRunner\EndlessRunner\Intermediate\Build\Win64\UnrealEditor\Development\EndlessRunner\CleanupInterface.cpp.obj"
+"C:\Users\william.isacsson\Unreal Projects\EndlessRunner\EndlessRunner\Intermediate\Build\Win64\UnrealEditor\Development\EndlessRunner\MovablePlatform.cpp.obj"
 "C:\Users\william.isacsson\Unreal Projects\EndlessRunner\EndlessRunner\Intermediate\Build\Win64\UnrealEditor\Development\EndlessRunner\Default.rc2.res"
 /OUT:"C:\Users\william.isacsson\Unreal Projects\EndlessRunner\EndlessRunner\Intermediate\Build\Win64\UnrealEditor\Development\EndlessRunner\UnrealEditor-EndlessRunner.lib"

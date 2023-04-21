@@ -23,6 +23,8 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	bool bIsActive;
+
 private:
 	FVector CurrentLocation;
 	float Speed;

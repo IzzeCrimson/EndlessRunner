@@ -11,6 +11,8 @@ AMovablePlatform::AMovablePlatform()
 
 	CurrentLocation = this->GetActorLocation();
 	Speed = 500.0f;
+
+	bIsActive = false;
 	
 }
 
@@ -23,6 +25,7 @@ void AMovablePlatform::BeginPlay()
 		CurrentLocation = this->GetActorLocation();
 		
 	}
+	
 }
 
 // Called every frame
@@ -30,8 +33,12 @@ void AMovablePlatform::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	CurrentLocation.Y -= Speed * DeltaTime;
-	SetActorLocation(CurrentLocation);
+	if (bIsActive)
+	{
+		CurrentLocation.Y -= Speed * DeltaTime;
+		SetActorLocation(CurrentLocation);
+		
+	}
 
 }
 
