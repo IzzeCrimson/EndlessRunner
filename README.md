@@ -21,6 +21,7 @@ void UHealthComponent::BeginPlay()
 		MyOwner->OnTakeAnyDamage.AddDynamic(this, &UHealthComponent::TakeDamage);
 	}
 }
+
 `
 
 Which gets called when the player collides with a blueprint templated based on the class Obstacle.
@@ -39,6 +40,7 @@ void AEndlessRunnerCharacter::OnOverlapBegin(UPrimitiveComponent* newComp, AActo
 
 	}
 }
+
 `
 
 And whenever the player takes damage I set a bool called **bCantakeDamage** to false to control when the player can take damage. And when the bool is set to false I start a timer which turns to bool to true after x amount of time.
@@ -63,6 +65,7 @@ void UHealthComponent::SetDamageBool()
 	bCanTakeDamage = true;
 	InvincibilityTimer.Invalidate();
 }
+
 `
 
 #### Spawning and "Removing" Platforms
@@ -83,6 +86,7 @@ void APlatformDestroyer::OnOverlapBegin(UPrimitiveComponent* newComp, AActor* Ot
 		Interface->DeleteActor(OtherActor);
 	}
 }
+
 `
 
 
