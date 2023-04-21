@@ -10,6 +10,7 @@ I could start with the HealthComponent. I have created a simple HealthComponent 
 
 In HealthComponent.cpp
 
+```
 void UHealthComponent::BeginPlay()
 {
 	Super::BeginPlay();
@@ -21,6 +22,7 @@ void UHealthComponent::BeginPlay()
 	}
 }
 
+```
 
 Which gets called when the player collides with a blueprint templated based on the class Obstacle.
 
