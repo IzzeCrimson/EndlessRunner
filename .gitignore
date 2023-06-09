@@ -42,6 +42,7 @@
 *.VC.opendb
 *.log
 *.ini
+*.json
 
 # Precompiled Assets
 SourceArt/**/*.png
