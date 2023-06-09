@@ -43,6 +43,7 @@
 *.log
 *.ini
 *.json
+*.bin
 
 # Precompiled Assets
 SourceArt/**/*.png
